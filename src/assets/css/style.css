@@ -21,6 +21,11 @@
     font-size: 25px;
     text-decoration: underline;
     cursor: grabbing;
+    /* background-color: #51c4df; */
+}
+#navbarSupportedContent .dropdown-item{
+  background-color: #51c4df;
+  color: #002231;
 }
 
 /* removing the scrollbar */
@@ -55,4 +60,7 @@ section{
   #app{
     width: 50rem;
    }
+}
+.spinner-border{
+  color: #51c4df;
 }

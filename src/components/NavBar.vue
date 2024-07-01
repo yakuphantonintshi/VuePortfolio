@@ -15,9 +15,17 @@
         <li class="nav-item">
           <a class="nav-link"  id="navBar" href="#about">About</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link"  id="navBar" href="#resume">Resume</a>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" id="navBar" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Resume
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" id="navBar" href="#">Education</a></li>
+            <li><a class="dropdown-item" id="navBar" href="#">Skills</a></li>
+          </ul>
         </li>
+
+
         <li class="nav-item">
           <a class="nav-link"  id="navBar" href="#project">Projects</a>
         </li>
@@ -35,6 +43,9 @@
 <style scoped>
   .navbar-toggler{
     background-color: #51c4df !important;
+  }
+  .dropdown-menu{
+    background-color: #002231;
   }
 </style>
 

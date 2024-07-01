@@ -10,7 +10,7 @@
 
         <div class="col">
             <div id="details">
-                <img src="https://yakuphantonintshi.github.io/myimages/Images/webdevelopment.jpg" width="450" height="450" alt="Home" class="img-fluid" loading="lazy">
+                <img src="https://yakuphantonintshi.github.io/myimages/Images/webdevelopment.jpg" width="500" height="500" alt="Home" class="img-fluid" loading="lazy">
             </div>
 
         </div>
