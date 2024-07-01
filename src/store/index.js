@@ -1,7 +1,7 @@
 import { createStore } from 'vuex'
 import axios from 'axios'
 import Swal from 'sweetalert2/dist/sweetalert2'
-const portfolioURL = 'https://yakuphantonintshi.github.io/vueEOMP/data'
+const portfolioURL = 'https://yakuphantonintshi.github.io/vueData/data/'
 
 export default createStore({
   state: {
