@@ -1,16 +1,16 @@
 <template>
   <div class="container">
-    <div class="row">
+    <div class="row align-items-center">
         <div class="col">
-            <h1 class="display-1">Yakupha Ntonintshi</h1>
-                <p v-if="title"> I am a<span class="span">{{ title }}</span>
+            <h1 class="display-2" id="myname">Yakupha Ntonintshi</h1>
+                <p v-if="title"> I am a <br><span class="span">{{ title }}</span>
                 </p>
                 <Spinner v-else/>
         </div>
 
         <div class="col">
             <div id="details">
-                <img src="https://yakuphantonintshi.github.io/myimages/Images/webdevelopment.jpg" alt="Home" loading="lazy">
+                <img src="https://yakuphantonintshi.github.io/myimages/Images/webdevelopment.jpg" width="450" height="450" alt="Home" class="img-fluid" loading="lazy">
             </div>
 
         </div>
@@ -46,18 +46,33 @@ onMounted(() => {
 
 <style scoped>
 span {
-    color: rgba(171, 122, 88, 0.71);
+    color: white;
     font-family:fantasy;
     size: 50rem;
-    text-shadow: 3px 3px 5px rgba(194, 80, 19, 0.5);
+    text-shadow: 3px 3px 5px #51c4df
 }
-.span{
+
+    .span{
     font-size: 3rem;
 }
-img{
-    border-radius: 8px solid brown;
-}
 p{
-    font-size: 2rem;
+    font-size: 3rem;
+    color: #51c4df;
 }
+#myname{
+    color: #51c4df;
+}
+.container{
+    padding-top: 2rem;
+    margin-top: 5rem;
+}
+
+@media screen and (max-width: 600px) {
+  .row{
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+
 </style>
