@@ -20,8 +20,8 @@
             Resume
           </a>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" id="navBar" href="#">Education</a></li>
-            <li><a class="dropdown-item" id="navBar" href="#">Skills</a></li>
+            <li><a class="dropdown-item" id="navBar" href="#education">Education</a></li>
+            <li><a class="dropdown-item" id="navBar" href="#resume">Skills</a></li>
           </ul>
         </li>
 
