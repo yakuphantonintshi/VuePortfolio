@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="container-fluid">
     <section class="row" id="landing">
       <LandingSection/>
 
@@ -17,6 +17,7 @@
     </section>
 
     <section class="row" id="project">
+      <ProjectsSection/>
 
     </section>
     <section class="row" id="testimonials">
@@ -32,13 +33,15 @@ import LandingSection from '@/components/LandingSection.vue'
 import AboutSection from '@/components/AboutSection.vue'
 import EducationSection from '@/components/EducationSection.vue'
 import SkillsSection from '@/components/SkillsSection.vue'
+import ProjectsSection from '@/components/ProjectsSection.vue'
 export default {
   name: 'HomeView',
   components: {
     LandingSection,
     AboutSection,
     EducationSection,
-    SkillsSection
+    SkillsSection,
+    ProjectsSection
    
    
   }

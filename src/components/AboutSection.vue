@@ -1,22 +1,23 @@
 <template>
     <div class="container">
-        <div class="row">
-            <h1 class="about">About Me</h1>
-        </div>
-        <div class="row align-items-center">
-            <div class="col">
-                <img src="https://yakuphantonintshi.github.io/myimages/Images/LifeChoicesPic.jpg" alt="my image" loading="lazy" class="img-fluid">
-            </div>
-            <div class="col">
-                <div v-if="about?.length"> 
-              <p class="lead" v-for="(about, index) in about" :key="index">
-                  {{ about }} 
-                 <span> <br><br> => </span>Date of Birth: 19 December 2002 <br> <br>
-                 <span> => </span>Age: 21 years old <br> <br>
-                 <span> => </span>Weight: 61.7 kg
-              </p>
-            </div>
-          <Spinner v-else/>
+
+        <h1 class="about">About Me</h1>
+        <div class="aboutwrap">
+            <div class="row align-items-center">
+                <div class="col-4">
+                    <img src="https://yakuphantonintshi.github.io/myimages/Images/LifeChoicesPic.jpg" alt="my image" loading="lazy" class="img-fluid">
+                </div>
+                <div class="col-8" about>
+                    <div v-if="about?.length"> 
+                  <p class="lead" v-for="(about, index) in about" :key="index">
+                      {{ about }} 
+                     <span> <br><br> => </span>Date of Birth: 19 December 2002 <br> <br>
+                     <span> => </span>Age: 21 years old <br> <br>
+                     <span> => </span>Weight: 61.7 kg
+                  </p>
+                </div>
+              <Spinner v-else/>
+                </div>
             </div>
         </div>
     </div>
@@ -33,29 +34,41 @@
   })
   </script>
   
-  <style scoped>
-    h1{
-        color: #51c4df
-    }
-    .col{
-        color: white;
-    }
-    .container{
-        padding-top: 70px;
-    }
-    img{
-        border-radius: 40px;
-    }
-    @media screen and (max-width: 800px) {
-  .row{
-    display: flex;
-    flex-direction: column;
-  }
+<style scoped>
+h1{
+    color: #51c4df
 }
+
+:is(.col-4, .col-8){
+    color: white;
+}
+
+.container{
+    padding-top: 70px;
+}
+
+.aboutwrap{
+    display: flex;
+    justify-content: center;
+}
+
+img{
+    width: 35rem;
+    border-radius: 1rem;
+}
+
+@media screen and (max-width: 800px) {
+.row{
+display: flex;
+flex-direction: column;
+}
+}
+
 p{
     font-size: 25px;
-    padding-left: 4rem;
 }
+
+
 span{
     color: #51c4df;
 }
@@ -65,5 +78,9 @@ span{
     font-size: 3.5rem;
     text-decoration: underline;
     padding-bottom: 2rem;
+}
+
+.row{
+    width: 80%;
 }
   </style>
