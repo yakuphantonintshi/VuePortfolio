@@ -8,10 +8,14 @@
       <AboutSection/>
 
     </section>
-    <section class="row" id="resume">
-      
-
+    <section class="row" id="education">
+      <EducationSection/>
     </section>
+
+    <section class="row" id="resume">
+      <SkillsSection/>
+    </section>
+
     <section class="row" id="project">
 
     </section>
@@ -26,11 +30,15 @@
 <script>
 import LandingSection from '@/components/LandingSection.vue'
 import AboutSection from '@/components/AboutSection.vue'
+import EducationSection from '@/components/EducationSection.vue'
+import SkillsSection from '@/components/SkillsSection.vue'
 export default {
   name: 'HomeView',
   components: {
     LandingSection,
-    AboutSection
+    AboutSection,
+    EducationSection,
+    SkillsSection
    
    
   }
