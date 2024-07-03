@@ -54,6 +54,7 @@ h1{
 
 img{
     width: 35rem;
+    height: 35rem;
     border-radius: 1rem;
 }
 
