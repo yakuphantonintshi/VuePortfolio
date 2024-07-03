@@ -1,30 +1,32 @@
 <template>
   <div class="container-fluid">
-    <section class="row" id="landing">
+    <section class="row vw-100 vh-100" id="landing">
       <LandingSection/>
 
     </section>
-    <section class="row" id="about">
+    <section class="row vw-100" id="about">
       <AboutSection/>
 
     </section>
-    <section class="row" id="education">
+    <section class="row vw-100" id="education">
       <EducationSection/>
     </section>
 
-    <section class="row" id="resume">
+    <section class="row vw-100" id="resume">
       <SkillsSection/>
     </section>
 
-    <section class="row" id="project">
+    <section class="row vw-100 " id="project">
       <ProjectsSection/>
 
     </section>
-    <section class="row" id="testimonials">
+    <section class="row vw-100" id="testimonials">
     <TestimonialsSection/>
       
     </section>
-    <section class="row" id="reachMe"></section>
+    <section class="row vw-100" id="reachMe">
+      <ReachMe/>
+    </section>
     
   </div>
 </template>
@@ -36,6 +38,7 @@ import EducationSection from '@/components/EducationSection.vue'
 import SkillsSection from '@/components/SkillsSection.vue'
 import ProjectsSection from '@/components/ProjectsSection.vue'
 import TestimonialsSection from '@/components/TestimonialsSection.vue'
+import ReachMe from '@/components/ReachmeSection.vue'
 export default {
   name: 'HomeView',
   components: {
@@ -44,7 +47,8 @@ export default {
     EducationSection,
     SkillsSection,
     ProjectsSection,
-    TestimonialsSection
+    TestimonialsSection,
+    ReachMe
    
    
   }

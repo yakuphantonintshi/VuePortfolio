@@ -23,6 +23,7 @@
       </div>
   
     </div>
+    
   </template>
   
   <script>
@@ -89,7 +90,7 @@ a:hover{
     width: 150px;
 }
 #card{
-    background-image: linear-gradient(to right, #002231, #51c4df);
+    background-image: linear-gradient(#002231, #51c4df,#002231, #51c4df);
     margin: 50px;
     border: 2px solid #51c4df
 }

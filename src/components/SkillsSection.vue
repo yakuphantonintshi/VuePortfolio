@@ -87,6 +87,9 @@ img{
     border-radius: 15px;
     background-color: transparent;
     margin: 3.5rem;
+    background-image: url('https://i.pinimg.com/originals/62/5e/95/625e95640cd2dc2f39b4862fd07826b2.gif');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
 }
 @media screen and (max-width: 700px) {
   #app{

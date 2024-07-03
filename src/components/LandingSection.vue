@@ -51,8 +51,12 @@ span {
     size: 50rem;
     text-shadow: 3px 3px 5px #51c4df
 }
+img{
+    width: 50rem;
+    height: 35rem;
+}
 
-    .span{
+.span{
     font-size: 3rem;
 }
 p{
@@ -65,6 +69,7 @@ p{
 .container{
     padding-top: 2rem;
     margin-top: 5rem;
+    
 }
 
 @media screen and (max-width: 600px) {

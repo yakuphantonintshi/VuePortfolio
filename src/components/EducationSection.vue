@@ -98,7 +98,7 @@ img{
    border-radius: 15px;
    margin-inline: 80px;
 }
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 600px) {
   #app{
     display: block;
    }
