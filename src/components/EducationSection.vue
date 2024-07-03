@@ -13,7 +13,7 @@
                     <p class="shadow">{{ product.degree }}</p>
                     <p class="lead"> Year of graduation: {{ product.graduation_year }}</p>
                     <p> {{ product.location }}</p>
-                    <button type="button"><i class="bi bi-download"></i> <br> Certificate</button>
+                    <a :href="product.certificate" class="btn btn-dark" target="_blank"><i class="bi bi-download"></i> Certificate</a>
                 </template>
             </Card>
         </div>
@@ -72,7 +72,7 @@ h1{
 .container{
     margin-top: 100px;
 }
-button{
+a{
     background-image: linear-gradient(to right, #002231, #51c4df);
     color: #51c4df;
     width: 50%;
