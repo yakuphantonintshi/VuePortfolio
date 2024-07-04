@@ -14,6 +14,9 @@
   nav a {
     font-weight: bold;
 }
+.navbar{
+  background-color: #002231;
+}
 #navBar{
     color: #51c4df;
     font-size: 22px;
@@ -55,12 +58,15 @@ img[alt='logo']{
   grid-template-rows: auto minmax(100dvh, 100%) auto;
 }
 section{
-  scroll-margin-block: 5rem;
+  scroll-margin-block: 6rem;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 630px) {
   #app{
-    width: 70rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* width: 200rem; */
    }
 }
 .spinner-border{

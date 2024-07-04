@@ -10,7 +10,7 @@
 
         <div class="col">
             <div id="details">
-                <img src="https://yakuphantonintshi.github.io/myimages/Images/webdevelopment.jpg" width="500" height="500" alt="Home" class="img-fluid" loading="lazy">
+                <img src="https://yakuphantonintshi.github.io/myimages/Images/webdevelopment.jpg" alt="Home" class="img-fluid" loading="lazy">
             </div>
 
         </div>
@@ -52,8 +52,9 @@ span {
     text-shadow: 3px 3px 5px #51c4df
 }
 img{
-    width: 50rem;
-    height: 35rem;
+    width: 700px;
+    height: 30rem;
+    object-fit: fill;
 }
 
 .span{
@@ -72,11 +73,15 @@ p{
     
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 750px) {
   .row{
     display: flex;
     flex-direction: column;
   }
+  img{
+    width: 400px;
+  }
+
 }
 
 
