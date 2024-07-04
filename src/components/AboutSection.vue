@@ -39,7 +39,7 @@ h1{
     color: #51c4df
 }
 
-:is(.col-4, .col-8){
+:is(.col-8, .col-4){
     color: white;
 }
 
@@ -53,9 +53,10 @@ h1{
 }
 
 img{
-    width: 35rem;
+    width: 50rem;
     height: 35rem;
     border-radius: 1rem;
+    object-fit: fill;
 }
 
 @media screen and (max-width: 800px) {
@@ -63,11 +64,18 @@ img{
 display: flex;
 flex-direction: column;
 }
+img{
+    height: 250px;
+}
+.about{
+    padding-top: 110px;
+}
 }
 
 p{
     font-size: 25px;
 }
+
 
 
 span{

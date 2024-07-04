@@ -1,48 +1,51 @@
 <template>
-   <h1>Contact me</h1>
-  <div class="container">
-    <form @submit.prevent="validateForm">
-      <div class="row">
-        <div class="col">
-          <input type="text" placeholder="Name" v-model="form.name" class="name" />
-          <span v-if="errors.name" class="error">{{ errors.name }}</span>
-        </div>
-        <div class="col">
-          <input type="text" placeholder="Surname" v-model="form.surname" class="surname" />
-          <span v-if="errors.surname" class="error">{{ errors.surname }}</span>
-        </div>
-      </div>
-      
-      <div class="row">
-        <div class="col">
-          <input type="number" placeholder="Phone number" v-model="form.number" class="number" />
-          <span v-if="errors.number" class="error">{{ errors.number }}</span>
-        </div>
-        <div class="col">
-          <input type="text" placeholder="Email address" v-model="form.email" class="email" /> <br>
-          <span v-if="errors.email" class="error">{{ errors.email }}</span>
-        </div>
-      </div>
-      
-      <br />
-      <input type="text" v-model="form.message" class="message" placeholder="Message" />
-      <span v-if="errors.message" class="error">{{ errors.message }}</span>
-      
-      <br />
-      <button type="submit" class="submit">Submit</button>
-    </form>
+  <div class="min-vh-100">
 
-    <div v-if="submitted" class="check-icon">
-      <i class="bi bi-check-circle"></i>
-    </div>
-
-    <div class="col" id="contact">
-      <h2>Contact Info</h2>
-      <p><i class="bi bi-envelope"></i><br> yakupha58756@gmail.com</p>
-      <p><i class="bi bi-telephone"></i><br> +27 62 507 0288</p>
-      <a href="https://www.linkedin.com/in/yakupha-ntonintshi-3b2672221/" target="_blank"><i class="bi bi-linkedin"></i></a><p> LinkedIn profile </p>
-      <p><i class="bi bi-geo-alt"></i><br> Khayelitsha 7784 Cape Town Western Cape</p>
-    </div>
+    <h1>Contact me</h1>
+   <div class="container">
+     <form @submit.prevent="validateForm">
+       <div class="row">
+         <div class="col">
+           <input type="text" placeholder="Name" v-model="form.name" class="name" />
+           <span v-if="errors.name" class="error">{{ errors.name }}</span>
+         </div>
+         <div class="col">
+           <input type="text" placeholder="Surname" v-model="form.surname" class="surname" />
+           <span v-if="errors.surname" class="error">{{ errors.surname }}</span>
+         </div>
+       </div>
+       
+       <div class="row ">
+         <div class="col">
+           <input type="text" placeholder="Phone number" v-model="form.number" class="number" />
+           <span v-if="errors.number" class="error">{{ errors.number }}</span>
+         </div>
+         <div class="col">
+           <input type="text" placeholder="Email address" v-model="form.email" class="email" /> <br>
+           <span v-if="errors.email" class="error">{{ errors.email }}</span>
+         </div>
+       </div>
+       
+       <br />
+       <input type="text" v-model="form.message" class="message" placeholder="Message" />
+       <span v-if="errors.message" class="error">{{ errors.message }}</span>
+       
+       <br />
+       <button type="submit" class="submit">Submit</button>
+     </form>
+ 
+     <div v-if="submitted" class="check-icon">
+       <i class="bi bi-check-circle"></i>
+     </div>
+ 
+     <div class="col" id="contact">
+       <h2>Contact Info</h2>
+       <p><i class="bi bi-envelope"></i><br> yakupha58756@gmail.com</p>
+       <p><i class="bi bi-telephone"></i><br> +27 62 507 0288</p>
+       <a href="https://www.linkedin.com/in/yakupha-ntonintshi-3b2672221/" target="_blank"><i class="bi bi-linkedin"></i></a><p> LinkedIn profile </p>
+       <p><i class="bi bi-geo-alt"></i><br> Khayelitsha 7784 Cape Town Western Cape</p>
+     </div>
+   </div>
   </div>
 </template>
 
@@ -196,14 +199,26 @@ p{
 .row{
   padding-top: 4rem;
 }
-@media screen and (max-width: 924px) {
+@media screen and (max-width: 895px) {
   .container{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
   }
-  /* :is(input .message){
-    width: 50px;
-  } */
+  
 }
+@media screen and (max-width: 1000px){
+  .row{
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+  }
+  .message{
+    width: 70%;
+  }
+}
+form{
+  margin-right: 100px;
+}
+
 </style>

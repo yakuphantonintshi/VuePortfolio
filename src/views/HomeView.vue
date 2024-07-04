@@ -16,7 +16,7 @@
       <SkillsSection/>
     </section>
 
-    <section class="row vw-100 " id="project">
+    <section class="row vw-100" id="project">
       <ProjectsSection/>
 
     </section>
