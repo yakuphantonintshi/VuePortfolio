@@ -38,24 +38,10 @@ export default {
       return this.$store.state.testimonials;
     },
   },
-  // beforeCreate(){
-  //    alert("Before create");
-  // },
-  // created(){
-  //     alert("Created")
-  // },
-  // beforeMount(){
-  //     alert("Before mount")
-  // },
+  
   mounted() {
     this.$store.dispatch("fetchTestimonials");
   },
-  // updated(){
-
-  // },
-  // unmounted(){
-  //     alert("unmounted")
-  // }
 };
 </script>
 
@@ -74,7 +60,6 @@ img {
   background-color: transparent;
   border: 5px solid #51c4df;
   border-radius: 2rem;
-  /* background-image: linear-gradient(to right, #002231, #51c4df); */
 }
 .container {
   margin-top: 3rem;
@@ -93,7 +78,6 @@ p {
   color: white;
   text-shadow: 4px 4px 6px #51c4df;
   font-size: 2rem;
-  /* text-decoration: underline; */
   padding-bottom: 2rem;
 }
 h4 {

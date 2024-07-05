@@ -12,7 +12,7 @@
                     </h5>
                     <p class="shadow">{{ product.degree }}</p>
                     <p class="lead"> Year of graduation: {{ product.graduation_year }}</p>
-                    <p> {{ product.location }}</p>
+                    <p> <i class="bi bi-geo-alt"></i>: {{ product.location }}</p>
                     <a :href="product.certificate" class="btn btn-dark" target="_blank"><i class="bi bi-download"></i> Certificate</a>
                 </template>
             </Card>
@@ -37,24 +37,9 @@ export default {
             return this.$store.state.education
         }
     },
-    // beforeCreate(){
-    //    alert("Before create");
-    // },
-    // created(){ 
-    //     alert("Created")
-    // },
-    // beforeMount(){
-    //     alert("Before mount")
-    // },
     mounted() {
         this.$store.dispatch('fetchEducation')
     },
-    // updated(){
-
-    // },
-    // unmounted(){
-    //     alert("unmounted")
-    // }
 }
 </script>
 

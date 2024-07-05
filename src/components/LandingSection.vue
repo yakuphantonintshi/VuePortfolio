@@ -55,6 +55,7 @@ img{
     width: 700px;
     height: 30rem;
     object-fit: fill;
+    border: 2px solid #51c4df;
 }
 
 .span{
