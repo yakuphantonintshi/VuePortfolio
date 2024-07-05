@@ -189,7 +189,7 @@ h2{
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-right: 7rem;
+  padding-right: 3rem;
   font-size: 1.7rem;
   padding-left: 3.5rem;
  border: 1px solid #51c4df;
