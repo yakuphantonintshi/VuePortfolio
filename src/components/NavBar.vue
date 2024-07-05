@@ -47,10 +47,5 @@
   .dropdown-menu{
     background-color: #002231;
   }
-  /* @media screen and (max-width: 999px){
-    nav{
-      width: 400px ;
-    }
-  } */
 </style>
 

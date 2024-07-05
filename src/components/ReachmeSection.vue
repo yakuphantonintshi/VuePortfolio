@@ -40,10 +40,10 @@
  
      <div class="col" id="contact">
        <h2>Contact Info</h2>
-       <p><i class="bi bi-envelope"></i><br> yakupha58756@gmail.com</p>
-       <p><i class="bi bi-telephone"></i><br> +27 62 507 0288</p>
-       <a href="https://www.linkedin.com/in/yakupha-ntonintshi-3b2672221/" target="_blank"><i class="bi bi-linkedin"></i></a><p> LinkedIn profile </p>
-       <p><i class="bi bi-geo-alt"></i><br> Khayelitsha 7784 Cape Town Western Cape</p>
+       <p id="email"><i class="bi bi-envelope"></i><br> yakupha58756@gmail.com</p>
+       <p id="phone"><i class="bi bi-telephone"></i><br> +27 62 507 0288</p>
+       <a href="https://www.linkedin.com/in/yakupha-ntonintshi-3b2672221/" target="_blank"><i class="bi bi-linkedin"></i></a><p id="linked"> LinkedIn profile </p>
+       <p id="address"><i class="bi bi-geo-alt"></i><br> Khayelitsha 7784 Cape Town Western Cape</p>
      </div>
    </div>
   </div>
@@ -189,9 +189,14 @@ h2{
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* justify-content: center; */
   padding-right: 7rem;
-  font-size: 1.5rem;
+  font-size: 1.7rem;
+  padding-left: 3.5rem;
+ border: 1px solid #51c4df;
+ border-radius: 3rem;
+ background-image: url('https://i.pinimg.com/originals/62/5e/95/625e95640cd2dc2f39b4862fd07826b2.gif');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
 }
 p{
   color: #51c4df;
@@ -216,9 +221,30 @@ p{
   .message{
     width: 70%;
   }
+  #contact{
+     margin-top: 40px;
+    width: 300px;
+    height: 420px;
+  }
+  p{
+    font-size: 15px;
+  }
 }
 form{
   margin-right: 100px;
 }
+#email:hover{
+  color: white;
+}
+#phone:hover{
+  color: white;
+}
+#linked:hover{
+  color: white;
+}
+#address:hover{
+  color: white;
+}
+
 
 </style>

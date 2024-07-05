@@ -37,24 +37,10 @@
               return this.$store.state.projects
           }
       },
-      // beforeCreate(){
-      //    alert("Before create");
-      // },
-      // created(){ 
-      //     alert("Created")
-      // },
-      // beforeMount(){
-      //     alert("Before mount")
-      // },
       mounted() {
           this.$store.dispatch('fetchProjects')
       },
-      // updated(){
-  
-      // },
-      // unmounted(){
-      //     alert("unmounted")
-      // }
+     
   }
   </script>
 
@@ -105,9 +91,15 @@ h2{
 }
 .card-title{
     color: white;
+    font-size: 25px;
 }
 .card{
     display: grid;
     grid-template-rows: repeat (3, 1fr);
 }
+.btn{
+    margin-top: 60px;
+    border: 2px solid #51c4df;
+}
+
   </style>

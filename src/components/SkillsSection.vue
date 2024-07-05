@@ -35,25 +35,10 @@ export default {
             return this.$store.state.skills
         }
     },
-    // beforeCreate(){
-    //    alert("Before create");
-    // },
-    // created(){ 
-    //     alert("Created")
-    // },
-    // beforeMount(){
-    //     alert("Before mount")
-    // },
     mounted() {
         this.$store.dispatch('fetchSkills')
     },
-    // updated(){
-
-    // },
-    // unmounted(){
-    //     alert("unmounted")
-    // }
-
+   
 }
 </script>
 
