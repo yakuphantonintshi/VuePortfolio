@@ -1,14 +1,14 @@
 <template>
   <div class="container">
     <div class="row align-items-center">
-        <div class="col">
+        <div class="col-5">
             <h1 class="display-2" id="myname">Yakupha Ntonintshi</h1>
                 <p v-if="title"> I am a <br><span class="span">{{ title }}</span>
                 </p>
                 <Spinner v-else/>
         </div>
 
-        <div class="col">
+        <div class="col-7">
             <div id="details">
                 <img src="https://yakuphantonintshi.github.io/myimages/Images/webdevelopment.jpg" alt="Home" class="img-fluid" loading="lazy">
             </div>

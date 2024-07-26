@@ -6,7 +6,7 @@
               <Card v-for="product in projects" :key="product.id" id="card">
                   <template #cardHeader>
                         <h2>{{ product.projectName }}</h2>
-                        <img :src="product.image" :alt="product.projectName" loading="lazy" class="img-fluid">
+                        <img :src="product.image" :alt="product.projectName" loading="lazy" class="img-fluid" id="cardImg">
                   </template>
                   <template #cardBody>
                       <h5 class="card-title">{{ product.description }}</h5>
@@ -78,7 +78,7 @@ a:hover{
 #card{
     background-image: linear-gradient(#002231, #51c4df,#002231, #51c4df);
     margin: 50px;
-    border: 2px solid #51c4df
+    border: 2px solid #51c4df;
 }
 h2{
     

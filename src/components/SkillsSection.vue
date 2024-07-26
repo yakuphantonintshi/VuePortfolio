@@ -68,6 +68,8 @@ img{
     padding-bottom: 2rem;
 }
 #card{
+    width: 23rem;
+    height: 24rem;
     border: 5px solid #51c4df;
     border-radius: 15px;
     background-color: transparent;

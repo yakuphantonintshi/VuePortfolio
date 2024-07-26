@@ -4,16 +4,15 @@
         <h1 class="about">About Me</h1>
         <div class="aboutwrap">
             <div class="row align-items-center">
-                <div class="col-4">
+                <div class="col-6">
                     <img src="https://yakuphantonintshi.github.io/myimages/Images/LifeChoicesPic.jpg" alt="my image" loading="lazy" class="img-fluid">
                 </div>
-                <div class="col-8" about>
+                <div class="col-6" about>
                     <div v-if="about?.length"> 
                   <p class="lead" v-for="(about, index) in about" :key="index">
                       {{ about }} 
                      <span> <br><br> => </span>Date of Birth: 19 December 2002 <br> <br>
                      <span> => </span>Age: 21 years old <br> <br>
-                     <span> => </span>Weight: 61.7 kg
                   </p>
                 </div>
               <Spinner v-else/>
@@ -39,7 +38,7 @@ h1{
     color: #51c4df
 }
 
-:is(.col-8, .col-4){
+.col-6{
     color: white;
 }
 
@@ -53,8 +52,8 @@ h1{
 }
 
 img{
-    width: 50rem;
-    height: 35rem;
+    width: 35rem;
+    height: 30rem;
     border-radius: 1rem;
     object-fit: fill;
 }
@@ -73,7 +72,7 @@ img{
 }
 
 p{
-    font-size: 25px;
+    font-size: 22px;
 }
 
 
