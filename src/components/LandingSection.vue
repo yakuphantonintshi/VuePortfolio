@@ -2,17 +2,14 @@
   <div class="container">
     <div class="row align-items-center">
         <div class="col">
+            
+        </div>
+
+        <div class="col">
             <h1 class="display-2" id="myname">Yakupha Ntonintshi</h1>
                 <p v-if="title"> I am a <br><span class="span">{{ title }}</span>
                 </p>
                 <Spinner v-else/>
-        </div>
-
-        <div class="col">
-            <div id="details">
-                <img src="https://yakuphantonintshi.github.io/myimages/Images/webdevelopment.jpg" alt="Home" class="img-fluid" loading="lazy">
-            </div>
-
         </div>
     </div>
   </div>
@@ -56,6 +53,7 @@ img{
     height: 30rem;
     object-fit: fill;
     border: 2px solid #51c4df;
+    box-shadow: 5px 5px 10px #51c4df;
 }
 
 .span{
@@ -67,12 +65,18 @@ p{
 }
 #myname{
     color: #51c4df;
-}
-.container{
-    padding-top: 2rem;
-    margin-top: 5rem;
+    font-size: 5rem;
     
 }
+.container{
+    background-image: url('https://retipoint.ca/assets/images/img1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.col{
+    padding-block-start: 17rem;
+}
+
 
 @media screen and (max-width: 750px) {
   .row{
