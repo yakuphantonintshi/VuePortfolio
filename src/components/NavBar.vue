@@ -10,10 +10,10 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active" id="navBar" aria-current="page" href="#landing">Home</a>
+          <a class="nav-link active" id="navBar" aria-current="page" href="#landing"><i class="bi bi-house-door-fill"></i>Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link"  id="navBar" href="#about">About</a>
+          <a class="nav-link"  id="navBar" href="#about"><i class="bi bi-file-person"></i>About</a>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" id="navBar" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -29,11 +29,11 @@
         <li class="nav-item">
           <a class="nav-link"  id="navBar" href="#project">Projects</a>
         </li>
-        <li class="nav-item">
+        <!-- <li class="nav-item">
           <a class="nav-link"  id="navBar" href="#testimonials">Testimonials</a>
-        </li>
+        </li> -->
         <li class="nav-item">
-          <a class="nav-link"  id="navBar" href="#reachMe">Reach Me</a>
+          <a class="nav-link"  id="navBar" href="#reachMe"><i class="bi bi-telephone-fill"></i>Reach Me</a>
         </li>
         </ul>
     </div>

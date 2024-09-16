@@ -19,9 +19,9 @@
     <section class="row vw-100" id="project">
       <ProjectsSection/>
 
-    </section>
+    <!-- </section>
     <section class="row vw-100" id="testimonials">
-    <TestimonialsSection/>
+    <TestimonialsSection/> -->
       
     </section>
     <section class="row vw-100" id="reachMe">
@@ -37,7 +37,7 @@ import AboutSection from '@/components/AboutSection.vue'
 import EducationSection from '@/components/EducationSection.vue'
 import SkillsSection from '@/components/SkillsSection.vue'
 import ProjectsSection from '@/components/ProjectsSection.vue'
-import TestimonialsSection from '@/components/TestimonialsSection.vue'
+// import TestimonialsSection from '@/components/TestimonialsSection.vue'
 import ReachMe from '@/components/ReachmeSection.vue'
 export default {
   name: 'HomeView',
@@ -47,7 +47,6 @@ export default {
     EducationSection,
     SkillsSection,
     ProjectsSection,
-    TestimonialsSection,
     ReachMe
    
    
