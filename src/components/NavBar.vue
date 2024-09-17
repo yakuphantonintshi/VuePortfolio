@@ -47,5 +47,8 @@
   .dropdown-menu{
     background-color: #002231;
   }
+  img{
+    border: 2px solid red;
+  }
 </style>
 

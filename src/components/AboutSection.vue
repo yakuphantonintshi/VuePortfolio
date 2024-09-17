@@ -4,19 +4,18 @@
         <h1 class="about">About Me</h1>
         <div class="aboutwrap">
             <div class="row align-items-center">
-                <div class="col-4">
-                    <img src="https://yakuphantonintshi.github.io/myimages/Images/LifeChoicesPic.jpg" alt="my image" loading="lazy" class="img-fluid">
-                </div>
-                <div class="col-8" about>
+                <div class="col-6" about>
                     <div v-if="about?.length"> 
                   <p class="lead" v-for="(about, index) in about" :key="index">
                       {{ about }} 
                      <span> <br><br> => </span>Date of Birth: 19 December 2002 <br> <br>
                      <span> => </span>Age: 21 years old <br> <br>
-                     <span> => </span>Weight: 61.7 kg
                   </p>
                 </div>
               <Spinner v-else/>
+                </div>
+                <div class="col-6">
+                    <img src="https://yakuphantonintshi.github.io/myimages/Images/LifeChoicesPic.jpg" alt="my image" loading="lazy" class="img-fluid">
                 </div>
             </div>
         </div>
@@ -35,16 +34,15 @@
   </script>
   
 <style scoped>
-h1{
-    color: #51c4df
-}
 
-:is(.col-8, .col-4){
+p{
     color: white;
 }
 
 .container{
     padding-top: 70px;
+    background-color: black;
+    /* background-image: linear-gradient(to right, red, rgb(39, 38, 38)); */
 }
 
 .aboutwrap{
@@ -53,10 +51,12 @@ h1{
 }
 
 img{
-    width: 50rem;
-    height: 35rem;
+    width: 32rem;
+    height: 38rem;
     border-radius: 1rem;
     object-fit: fill;
+    /* border: 8px solid #51c4df; */
+    box-shadow: 4px 4px 10px 8px red;
 }
 
 @media screen and (max-width: 800px) {
@@ -79,11 +79,11 @@ p{
 
 
 span{
-    color: #51c4df;
+    color: red;
 }
 .about{
     color: white;
-    text-shadow: 4px 4px 6px #51c4df;
+    text-shadow: 4px 4px 6px red;
     font-size: 3.5rem;
     text-decoration: underline;
     padding-bottom: 2rem;

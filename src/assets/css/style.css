@@ -24,7 +24,7 @@
 }
 
 #navBar{
-    color: #51c4df;
+    color: red;
     font-size: 22px;
     padding-inline: 3rem;
 }
@@ -77,8 +77,9 @@ section{
    }
 }
 .spinner-border{
-  color: #51c4df;
+  color: red;
 }
 .navbar{
-  background-color: #fff;
+  /* background-image: linear-gradient(to right, #4e4949, red,  #595959); */
+    background-color: black ;
 }

@@ -44,22 +44,23 @@ export default {
 </script>
 
 <style scoped>
-h1{
-    color: #51c4df;
+:is(h5, p,a){
+    color: white;
 }
 .education{
     color: white;
-    text-shadow: 4px 4px 6px #51c4df;
+    text-shadow: 4px 4px 6px red;
     font-size: 3.5rem;
     text-decoration: underline;
     padding-bottom: 2rem;
 }
 .container{
-    margin-top: 100px;
+   
+    background-color: black;
 }
 a{
-    background-image: linear-gradient(to right, #002231, #51c4df);
-    color: #51c4df;
+    background-image: linear-gradient(to right, black, red, black);
+    color: white;
     width: 50%;
     font-size: 1.5rem;
     transition: width 2s;
@@ -73,13 +74,14 @@ img{
     height: 400px;
 }
 .shadow{
-    text-shadow: 4px 4px 6px #51c4df;
+    text-shadow: 4px 4px 6px red;
     font-size: 2rem;
     text-decoration: underline;
     padding-bottom: 2rem;
 }
 #card{
-    border: 5px solid #51c4df;
+    border: 5px solid red;
+    background-color: transparent;
    border-radius: 15px;
    margin-inline: 80px;
 }
