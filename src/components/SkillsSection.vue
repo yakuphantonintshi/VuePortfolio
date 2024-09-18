@@ -47,7 +47,7 @@ img{
     width: 200px;
     height: 200px;
 }
-.container{
+/* .container{
     position: relative;
   animation-name: example;
   animation-duration: 3s;  
@@ -59,20 +59,28 @@ img{
 @keyframes example {
   from {right: 0px;}
   to {right: 200px;}
-}
+} */
+ .container{
+    /* background-image: url('https://cdn.dribbble.com/users/1588446/screenshots/7028330/media/8d542e2cc44a1054a2ff8057438fdb8a.gif');
+    background-repeat: no-repeat;
+    background-size: 100% 100%; */
+    background-color: rgb(36, 34, 34);
+    /* background-image: linear-gradient(to right, rgb(122, 8, 8), black); */
+ }
 .skills{
     color: white;
-    text-shadow: 4px 4px 6px #51c4df;
+    text-shadow: 4px 4px 6px red;
     font-size: 3.5rem;
     text-decoration: underline;
     padding-bottom: 2rem;
 }
 #card{
-    border: 5px solid #51c4df;
+    border: 5px solid red;
     border-radius: 15px;
     background-color: transparent;
     margin: 3.5rem;
-    background-image: url('https://i.pinimg.com/originals/62/5e/95/625e95640cd2dc2f39b4862fd07826b2.gif');
+    /* background-image: url('https://i.pinimg.com/originals/62/5e/95/625e95640cd2dc2f39b4862fd07826b2.gif'); */
+    background-color: transparent;
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
@@ -83,7 +91,7 @@ img{
 }
 .card-title{
     color: white;
-    text-shadow: 4px 4px 6px #51c4df;
+    text-shadow: 4px 4px 6px red;
     font-size: 2rem;
     text-decoration: underline;
     padding-bottom: 2rem; 

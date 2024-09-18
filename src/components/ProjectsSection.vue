@@ -51,12 +51,10 @@
      object-fit: contain;
     object-position: center;
   }
-  h1{
-    color: #51c4df;
-}
+
 .projects{
     color: white;
-    text-shadow: 4px 4px 6px #51c4df;
+    text-shadow: 4px 4px 6px red;
     font-size: 3.5rem;
     text-decoration: underline;
     padding-bottom: 2rem;
@@ -64,8 +62,8 @@
     grid-template-rows: repeat (3, 1fr );
 }
 a{
-    background-image: linear-gradient(to right, #002231, #51c4df);
-    color: #51c4df;
+    /* background-image: linear-gradient(to right, #002231, #51c4df); */
+    color: red;
     width: 200px;
     font-size: 1.5rem;
     transition: width 2s;
@@ -74,16 +72,19 @@ a{
 a:hover{
     color: white;
     width: 150px;
+    border: 1px solid red;
+    background-color: transparent;
 }
 #card{
-    background-image: linear-gradient(#002231, #51c4df,#002231, #51c4df);
+    /* background-image: linear-gradient(#002231, #51c4df,#002231, #51c4df); */
+    background-color: transparent;
     margin: 50px;
-    border: 2px solid #51c4df
+    border: 2px solid red
 }
 h2{
     
     color: white;
-    text-shadow: 4px 4px 6px #51c4df;
+    text-shadow: 4px 4px 6px red;
     font-size: 2rem;
     text-decoration: underline;
     padding-bottom: 2rem; 
@@ -99,7 +100,10 @@ h2{
 }
 .btn{
     margin-top: 60px;
-    border: 2px solid #51c4df;
+    border: 2px solid red;
+}
+.container-fluid{
+    background-color: black;
 }
 
   </style>

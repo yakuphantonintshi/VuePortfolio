@@ -1,5 +1,5 @@
 <template>
-<nav class="navbar navbar-expand-lg sticky-top">
+<nav class="navbar">
   <div class="container-fluid">
     <router-link class="navbar-brand" to="/">
         <img src="https://yakuphantonintshi.github.io/myimages/Images/logo.jpg" alt="logo" class="img-fluid" loading="lazy">
@@ -29,9 +29,6 @@
         <li class="nav-item">
           <a class="nav-link"  id="navBar" href="#project">Projects</a>
         </li>
-        <!-- <li class="nav-item">
-          <a class="nav-link"  id="navBar" href="#testimonials">Testimonials</a>
-        </li> -->
         <li class="nav-item">
           <a class="nav-link"  id="navBar" href="#reachMe"><i class="bi bi-telephone-fill"></i>Reach Me</a>
         </li>
