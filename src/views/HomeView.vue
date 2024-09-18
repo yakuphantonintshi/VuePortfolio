@@ -8,11 +8,11 @@
       <AboutSection/>
 
     </section>
-    <section class="row vw-100 vh-100" id="education">
+    <section class="row vw-100" id="education">
       <EducationSection/>
     </section>
 
-    <section class="row vw-100" id="resume">
+    <section class="row" id="resume">
       <SkillsSection/>
     </section>
 

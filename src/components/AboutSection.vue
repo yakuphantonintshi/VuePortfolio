@@ -1,6 +1,5 @@
 <template>
     <div class="container">
-
         <h1 class="about">About Me</h1>
         <div class="aboutwrap">
             <div class="row align-items-center">
@@ -11,12 +10,55 @@
                      <span> <br><br> => </span>Date of Birth: 19 December 2002 <br> <br>
                      <span> => </span>Age: 21 years old <br> <br>
                   </p>
+                  <button type="button"><i class="bi bi-cloud-arrow-down-fill"></i> RESUME</button>
                 </div>
               <Spinner v-else/>
                 </div>
                 <div class="col-6">
-                    <img src="https://yakuphantonintshi.github.io/myimages/Images/LifeChoicesPic.jpg" alt="my image" loading="lazy" class="img-fluid">
+      <div class="row">
+        <h1 class="skills">TECHNICAL SKILLS</h1>
+        <div class="row gap-2 justify-content-center" id="skills" v-if="skills?.length">
+          <Card v-for="skill in skills" :key="skill.id" id="card">
+            <template #cardHeader>
+              <h5 class="card-title">{{ skill.title }} </h5>
+            </template>
+            <template #cardBody>
+              <img :src="skill.image" :alt="skill.title" loading="lazy" class="img-fluid">
+            </template>
+          </Card> <br>
+          <h2>SOFT SKILLS</h2>
+          <ul>
+            <li>
+              Communication
+            </li>
+            <li>
+              Team Work
+            </li>
+            <li>
+              Problem solving
+            </li>
+            <li>
+              Time management
+            </li>
+            <li>
+              Adaptability 
+            </li>
+            <li>
+              Leadership
+            </li>
+            <li>
+              Peer Support
+            </li>
+          </ul>
+        </div>
+        <div v-else class="d-flex justify-content-center">
+          <div class="spinner-border" role="status"></div>
+        </div>
+    
+    </div>
+              <!-- <img src="https://yakuphantonintshi.github.io/myimages/Images/LifeChoicesPic.jpg" alt="my image" loading="lazy" class="img-fluid"> -->
                 </div>
+                
             </div>
         </div>
     </div>
@@ -25,8 +67,10 @@
   import { computed, onMounted} from 'vue'
   import {useStore} from 'vuex'
   import Spinner from '@/components/Spinner.vue'
+  import Card from '@/components/Card.vue'
   const store = useStore()
   const about = computed(() => store.state.about)
+  const skills = computed(() => store.state.skills);
   
   onMounted(() => {
       store.dispatch('fetchAbout')
@@ -34,14 +78,58 @@
   </script>
   
 <style scoped>
+button{
+  width: 300px;
+  height: 3.4rem;
+  font-size: 1.5rem;
+  background-color: #197b91;
+  color: white;
+  border-radius: 5px;
+  margin-top: 2rem;
+  border: 2px solid #51C4DF;
+}
+ul{
+  color: white;
+  font-size: 1.6rem;
+}
+.card{
+    width: 180px;
+    height: 250px;
+    background-color: transparent;
+    border: 2px solid #51C4DF;
+    margin-block: 2.5rem;
+}
+.card-title{
+    color: white;
+}
+:is(h1, h2){
+    color: white;
+    text-shadow: 2px 2px 5px #51C4DF;
+}
+#skills{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, auto);
+  /* gap: 2rem; Space between grid items */
+  justify-items: center;
+  margin-left: 3rem;
+  height: 600px;
+  overflow-y: scroll;
+  padding: 10px;
+  background-color: transparent;
+  border: 2px solid #51C4DF;
+}
+.img-fluid{
+    height: 150px;
+}
 
 p{
     color: white;
 }
 
 .container{
-    padding-top: 70px;
-    background-color: black;
+    /* padding-top: 70px; */
+    background-color: #002231;
     /* background-image: linear-gradient(to right, red, rgb(39, 38, 38)); */
 }
 
@@ -53,10 +141,10 @@ p{
 img{
     width: 32rem;
     height: 38rem;
-    border-radius: 1rem;
+    /* border-radius: 1rem; */
     object-fit: fill;
     /* border: 8px solid #51c4df; */
-    box-shadow: 4px 4px 10px 8px red;
+    box-shadow: 4px 4px 10px 8px #51C4DF;
 }
 
 @media screen and (max-width: 800px) {
@@ -77,19 +165,18 @@ p{
 }
 
 
-
 span{
-    color: red;
+    color: #51C4DF;
 }
 .about{
     color: white;
-    text-shadow: 4px 4px 6px red;
+    text-shadow: 4px 4px 6px #51C4DF;
     font-size: 3.5rem;
     text-decoration: underline;
     padding-bottom: 2rem;
 }
 
 .row{
-    width: 80%;
+    width: 90%;
 }
   </style>

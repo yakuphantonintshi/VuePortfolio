@@ -11,7 +11,7 @@
                     <h5 class="card-title">{{ product.school }}
                     </h5>
                     <p class="shadow">{{ product.degree }}</p>
-                    <p class="lead"> Year of graduation: {{ product.graduation_year }}</p>
+                    <p class="lead"> {{ product.graduation_year }}</p>
                     <p> <i class="bi bi-geo-alt"></i>: {{ product.location }}</p>
                     <a :href="product.certificate" class="btn btn-dark" target="_blank"><i class="bi bi-download"></i> Certificate</a>
                 </template>
@@ -49,17 +49,18 @@ export default {
 }
 .education{
     color: white;
-    text-shadow: 4px 4px 6px red;
+    text-shadow: 4px 4px 6px #51C4DF;
     font-size: 3.5rem;
     text-decoration: underline;
     padding-bottom: 2rem;
 }
 .container{
    
-    background-color: black;
+    background-color:#002231;
 }
 a{
-    background-image: linear-gradient(to right, black, red, black);
+    /* background-image: linear-gradient(to right, black, red, black); */
+    background-image: linear-gradient(to right, #002231, #51C4DF);
     color: white;
     width: 50%;
     font-size: 1.5rem;
@@ -74,16 +75,17 @@ img{
     height: 400px;
 }
 .shadow{
-    text-shadow: 4px 4px 6px red;
+    text-shadow: 4px 4px 6px #51C4DF;
     font-size: 2rem;
     text-decoration: underline;
-    padding-bottom: 2rem;
+    /* padding-bottom: 2rem; */
 }
 #card{
-    border: 5px solid red;
+    border: 5px solid #51C4DF;
     background-color: transparent;
    border-radius: 15px;
    margin-inline: 80px;
+   width: 400px;
 }
 @media screen and (max-width: 600px) {
   #app{

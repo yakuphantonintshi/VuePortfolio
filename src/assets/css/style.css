@@ -24,7 +24,7 @@
 }
 
 #navBar{
-    color: red;
+    color: #51C4DF;
     font-size: 22px;
     padding-inline: 3rem;
 }
@@ -41,9 +41,9 @@
 }
 
 /* removing the scrollbar */
-::-webkit-scrollbar{
+/* ::-webkit-scrollbar{
   display: none;
-}
+} */
 
 /* select all images */
 img{
@@ -77,9 +77,10 @@ section{
    }
 }
 .spinner-border{
-  color: red;
+  color: #51C4DF;
 }
 .navbar{
   /* background-image: linear-gradient(to right, #4e4949, red,  #595959); */
-    background-color: black ;
+    /* background-image:linear-gradient(to right,rgb(39, 39, 100), blue, rgb(39, 39, 100)); */
+    background-color: #002231 ;
 }

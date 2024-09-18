@@ -2,7 +2,8 @@
   <div class="container-fluid">
     <div class="row align-items-center">
         <div class="col">
-            <img src="https://cdn.dribbble.com/users/1588446/screenshots/7028330/media/8d542e2cc44a1054a2ff8057438fdb8a.gif" alt="">
+            <img src="https://yakuphantonintshi.github.io/myimages/Images/LifeChoicesPic.jpg" alt="my image" loading="lazy" class="img-fluid">
+            <!-- <img src="https://cdn.dribbble.com/users/1588446/screenshots/7028330/media/8d542e2cc44a1054a2ff8057438fdb8a.gif" alt=""> -->
         </div>
 
         <div class="col">
@@ -42,18 +43,20 @@ onMounted(() => {
 </script>
 
 <style scoped>
+
 span {
     color: white;
     font-family:fantasy;
     size: 50rem;
-    text-shadow: 3px 3px 5px red;
+    text-shadow: 3px 3px 5px #51C4DF;
 }
 img{
-    width: 700px;
-    height: 30rem;
+    width: 550px;
+    /* height: 30rem; */
     object-fit: fill;
-    border: 2px solid red;
-    box-shadow: 5px 5px 10px red;
+    border: 2px solid #51C4DF;
+    box-shadow: 5px 5px 10px #51C4DF;
+    border-radius: 2rem;
 }
 
 .span{
@@ -65,16 +68,20 @@ p{
 }
 #myname{
     color: white;
-    text-shadow: 3px 3px 5px red;
-    font-size: 5rem;
+    text-shadow: 3px 3px 5px #51C4DF;
+    font-size: 6rem;
+    padding-bottom: 2rem;
     
 }
 .container-fluid{
     /* background-image: url('https://retipoint.ca/assets/images/img1.jpg');
     background-repeat: no-repeat;
     background-size: cover; */
-    background-color: black;
-    border-bottom: 1px solid red;
+    background-color: #002231;
+    border-bottom: 2px solid #51C4DF;
+    /* background-image: url('https://png.pngtree.com/thumb_back/fw800/background/20231230/pngtree-ethereal-dark-blue-background-a-technological-landscape-of-textured-lines-image_13883330.png');
+    background-repeat: no-repeat;
+    background-size: cover;  */
 }
 .col{
     padding-block-start: 7rem;

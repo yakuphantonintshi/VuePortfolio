@@ -15,7 +15,7 @@
         <li class="nav-item">
           <a class="nav-link"  id="navBar" href="#about"><i class="bi bi-file-person"></i>About</a>
         </li>
-        <li class="nav-item dropdown">
+        <!-- <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" id="navBar" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Resume
           </a>
@@ -23,8 +23,10 @@
             <li><a class="dropdown-item" id="navBar" href="#education">Education</a></li>
             <li><a class="dropdown-item" id="navBar" href="#resume">Skills</a></li>
           </ul>
+        </li> -->
+        <li class="nav-item">
+          <a class="nav-link"  id="navBar" href="#education">Education & Experiences</a>
         </li>
-
 
         <li class="nav-item">
           <a class="nav-link"  id="navBar" href="#project">Projects</a>
@@ -45,7 +47,10 @@
     background-color: #002231;
   }
   img{
-    border: 2px solid red;
+    border: 2px solid #51c4df;
+  }
+  .navbar{
+    position: sticky !important;
   }
 </style>
 

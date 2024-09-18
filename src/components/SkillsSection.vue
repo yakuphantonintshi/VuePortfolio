@@ -1,6 +1,6 @@
 <template>
     <div class="container">
-      <div class="row">
+      <!-- <div class="row">
              <h1 class="skills">Skills</h1>
               <div class="row gap-2 justify-content-center" v-if="skills?.length">
               <Card v-for="skill in skills" :key="skill.id" id="card">
@@ -18,17 +18,17 @@
               <div class="spinner-border" role="status">
               </div>
           </div>
-      </div>
+      </div> -->
   
     </div>
   </template>
 
 
 <script>
-import Card from '@/components/Card.vue'
+// import Card from '@/components/Card.vue'
 export default {
     components: {
-        Card
+        // Card
     },
     computed: {
         skills() {
