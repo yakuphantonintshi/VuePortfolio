@@ -1,5 +1,5 @@
 <template>
-<nav class="navbar">
+<nav class="navbar navbar-expand-lg sticky-top">
   <div class="container-fluid">
     <router-link class="navbar-brand" to="/">
         <img src="https://yakuphantonintshi.github.io/myimages/Images/logo.jpg" alt="logo" class="img-fluid" loading="lazy">
