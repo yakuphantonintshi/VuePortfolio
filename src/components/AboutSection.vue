@@ -11,8 +11,6 @@
                      <span> => </span>Age: 21 years old <br> <br> -->
                   </p>
                   <a href="https://yakuphantonintshi.github.io/myimages/Images/CURRICULUM VITAE OF YAKUPHA copy.docx.pdf" class="btn btn-dark" target="_blank"><i class="bi bi-cloud-arrow-down-fill"></i> RESUME</a>
-
-                  <!-- <a href="https://yakuphantonintshi.github.io/myimages/Images/CURRICULUM VITAE OF YAKUPHA copy.docx.pdf"> <button type="button"><i class="bi bi-cloud-arrow-down-fill"></i> RESUME</button></a> -->
                 </div>
               <Spinner v-else/>
                 </div>
