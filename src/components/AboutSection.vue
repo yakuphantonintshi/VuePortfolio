@@ -7,10 +7,12 @@
                     <div v-if="about?.length"> 
                   <p class="lead" v-for="(about, index) in about" :key="index">
                       {{ about }} 
-                     <span> <br><br> => </span>Date of Birth: 19 December 2002 <br> <br>
-                     <span> => </span>Age: 21 years old <br> <br>
+                     <!-- <span> <br><br> => </span>Date of Birth: 19 December 2002 <br> <br>
+                     <span> => </span>Age: 21 years old <br> <br> -->
                   </p>
-                  <button type="button"><i class="bi bi-cloud-arrow-down-fill"></i> RESUME</button>
+                  <a href="https://yakuphantonintshi.github.io/myimages/Images/CURRICULUM VITAE OF YAKUPHA copy.docx.pdf" class="btn btn-dark" target="_blank"><i class="bi bi-cloud-arrow-down-fill"></i> RESUME</a>
+
+                  <!-- <a href="https://yakuphantonintshi.github.io/myimages/Images/CURRICULUM VITAE OF YAKUPHA copy.docx.pdf"> <button type="button"><i class="bi bi-cloud-arrow-down-fill"></i> RESUME</button></a> -->
                 </div>
               <Spinner v-else/>
                 </div>
@@ -26,7 +28,7 @@
               <img :src="skill.image" :alt="skill.title" loading="lazy" class="img-fluid">
             </template>
           </Card> <br>
-          <h2>SOFT SKILLS</h2>
+          <h2>SOFT SKILLS</h2> <br>
           <ul>
             <li>
               Communication
@@ -78,7 +80,7 @@
   </script>
   
 <style scoped>
-button{
+.btn{
   width: 300px;
   height: 3.4rem;
   font-size: 1.5rem;
@@ -88,9 +90,17 @@ button{
   margin-top: 2rem;
   border: 2px solid #51C4DF;
 }
+.btn:hover{
+  background-color: #197b91;
+  color: white;
+  border: 2px solid #51C4DF;
+}
 ul{
   color: white;
   font-size: 1.6rem;
+}
+li{
+  margin-left: 2rem;
 }
 .card{
     width: 180px;
@@ -125,12 +135,12 @@ ul{
 
 p{
     color: white;
+    font-size: 1.5rem;
 }
 
 .container{
-    /* padding-top: 70px; */
     background-color: #002231;
-    /* background-image: linear-gradient(to right, red, rgb(39, 38, 38)); */
+    margin-top: 3rem;
 }
 
 .aboutwrap{
@@ -146,11 +156,20 @@ img{
     /* border: 8px solid #51c4df; */
     box-shadow: 4px 4px 10px 8px #51C4DF;
 }
-
+@media screen and (max-width: 1002px) {
+  #skills{
+  display: block;
+}
+#card{
+  width: 20rem;
+}
+}
 @media screen and (max-width: 800px) {
-.row{
-display: flex;
-flex-direction: column;
+  #skills{
+  display: block;
+}
+#card{
+  width: 25rem;
 }
 img{
     height: 250px;
@@ -158,10 +177,58 @@ img{
 .about{
     padding-top: 110px;
 }
+.btn{
+  width: 200px;
 }
-
-p{
-    font-size: 25px;
+.col-6{
+  width: 800px;
+}
+.skills{
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+}
+@media screen and (max-width: 700px) {
+#skills{
+  display: block;
+}
+#card{
+  width: 20rem;
+}
+}
+@media screen and (max-width: 600px) {
+  #skills{
+  display: block;
+}
+#card{
+  /* margin-left: 4rem; */
+  width: 14rem;
+}
+}
+@media screen and (max-width: 500px) {
+  #skills{
+  display: block;
+}
+#card{
+  /* margin-left: 4rem; */
+  width: 14rem;
+}
+}
+@media screen and (max-width: 400px) {
+.btn{
+width: 150px;
+}
+.img-fluid{
+  width: 150px;
+  height: 150px;
+}
+:is(h2, li){
+  font-size: 1rem;
+}
+#skills{
+  display: block;
+}
 }
 
 

@@ -45,8 +45,13 @@
   </script>
 
   <style scoped>
+  .card{
+    width: 450px;
+    height: 680px;
+  }
   .container-fluid{
     background-color: #002231;
+    margin-top: 3rem;
   }
   img{
     width: 350px;
@@ -60,7 +65,7 @@
 .projects{
     color: white;
     text-shadow: 4px 4px 6px #51c4df;
-    font-size: 3.5rem;
+    font-size: 3rem;
     text-decoration: underline;
     padding-bottom: 2rem;
     display: grid;
@@ -69,18 +74,18 @@
 a{
     background-image: linear-gradient(to right, #002231, #51c4df);
     color: #51c4df;
-    width: 200px;
+    width: 150px;
     font-size: 1.5rem;
     transition: width 2s;
-    margin-inline: 5px;
+    margin-inline: 20px;
 }
 a:hover{
     color: white;
     width: 150px;
 }
 #card{
-    background-image: linear-gradient(#002231, #51c4df,#002231, #51c4df);
     margin: 50px;
+    background-color: transparent;
     border: 2px solid #51c4df
 }
 h2{
@@ -94,15 +99,31 @@ h2{
 }
 .card-title{
     color: white;
-    font-size: 25px;
+    font-size: 1.2rem;
 }
 .card{
     display: grid;
     grid-template-rows: repeat (3, 1fr);
 }
 .btn{
-    margin-top: 60px;
+    margin-top: 30px;
     border: 2px solid #51c4df;
+}
+@media screen and (max-width: 400px) {
+.btn{
+width: 150px;
+height: 50px;
+}
+.img-fluid{
+    width: 200px;
+    /* margin-bottom: 50px; */
+    margin-top: -70px;
+}
+.card-title{
+    margin-top: -60px;
+    font-size:smaller;
+
+}
 }
 
   </style>

@@ -55,8 +55,8 @@ export default {
     padding-bottom: 2rem;
 }
 .container{
-   
     background-color:#002231;
+    margin-top: 3rem;
 }
 a{
     /* background-image: linear-gradient(to right, black, red, black); */
@@ -71,8 +71,9 @@ button:hover{
     width: 300px;
 }
 img{
-    width: 400px;
-    height: 400px;
+    padding-top: 1rem;
+    width: 300px;
+    height: 300px;
 }
 .shadow{
     text-shadow: 4px 4px 6px #51C4DF;
@@ -81,7 +82,7 @@ img{
     /* padding-bottom: 2rem; */
 }
 #card{
-    border: 5px solid #51C4DF;
+    border: 2px solid #51C4DF;
     background-color: transparent;
    border-radius: 15px;
    margin-inline: 80px;
@@ -90,6 +91,18 @@ img{
 @media screen and (max-width: 600px) {
   #app{
     display: block;
+   }
+}
+@media screen and (max-width: 400px) {
+  #card{
+    width: 300px;
+   }
+   .btn{
+    width: 200px;
+   }
+   .img-fluid{
+    width: 200px;
+    height: 300px;
    }
 }
 
