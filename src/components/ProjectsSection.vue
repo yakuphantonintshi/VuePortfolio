@@ -109,10 +109,10 @@ h2{
     margin-top: 30px;
     border: 2px solid #51c4df;
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 500px) {
 .btn{
 width: 150px;
-height: 50px;
+height: 30px;
 }
 .img-fluid{
     width: 200px;
@@ -123,6 +123,9 @@ height: 50px;
     margin-top: -60px;
     font-size:smaller;
 
+}
+a{
+    font-size: 1rem;
 }
 }
 
