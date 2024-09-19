@@ -1,9 +1,9 @@
 <template>
-<nav class="navbar navbar-expand-lg sticky-top">
+<nav class="navbar navbar-expand-lg fixed-top">
   <div class="container-fluid">
-    <router-link class="navbar-brand" to="/">
+    <a class="navbar-brand" href="/">
         <img src="https://yakuphantonintshi.github.io/myimages/Images/logo.jpg" alt="logo" class="img-fluid" loading="lazy">
-    </router-link>
+    </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -15,21 +15,12 @@
         <li class="nav-item">
           <a class="nav-link"  id="navBar" href="#about"><i class="bi bi-file-person"></i>About</a>
         </li>
-        <!-- <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" id="navBar" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Resume
-          </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" id="navBar" href="#education">Education</a></li>
-            <li><a class="dropdown-item" id="navBar" href="#resume">Skills</a></li>
-          </ul>
-        </li> -->
         <li class="nav-item">
-          <a class="nav-link"  id="navBar" href="#education">Education & Experiences</a>
+          <a class="nav-link"  id="navBar" href="#education"><i class="bi bi-book-fill"></i>Education</a>
         </li>
 
         <li class="nav-item">
-          <a class="nav-link"  id="navBar" href="#project">Projects</a>
+          <a class="nav-link"  id="navBar" href="#project"><i class="bi bi-pc-display-horizontal"></i>Projects</a>
         </li>
         <li class="nav-item">
           <a class="nav-link"  id="navBar" href="#reachMe"><i class="bi bi-telephone-fill"></i>Reach Me</a>
@@ -39,6 +30,7 @@
   </div>
 </nav>
 </template>
+
 <style scoped>
   .navbar-toggler{
     background-color: #51c4df !important;
@@ -49,8 +41,6 @@
   img{
     border: 2px solid #51c4df;
   }
-  .navbar{
-    position: sticky !important;
-  }
+  
 </style>
 

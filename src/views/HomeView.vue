@@ -4,7 +4,7 @@
       <LandingSection/>
 
     </section>
-    <section class="row vw-100 vh-100" id="about">
+    <section class="row vw-100" id="about">
       <AboutSection/>
 
     </section>

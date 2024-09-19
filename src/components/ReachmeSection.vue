@@ -3,7 +3,8 @@
 
     <h1>Contact me</h1>
    <div class="container">
-     <form @submit.prevent="validateForm">
+     <form action="https://formspree.io/f/xanwgnnq"
+     method="POST" @submit.prevent="validateForm">
        <div class="row">
          <div class="col">
            <input type="text" placeholder="Name" v-model="form.name" class="name" />
@@ -42,7 +43,8 @@
        <h2>Contact Info</h2>
        <p id="email"><i class="bi bi-envelope"></i><br> yakupha58756@gmail.com</p>
        <p id="phone"><i class="bi bi-telephone"></i><br> +27 62 507 0288</p>
-       <a href="https://www.linkedin.com/in/yakupha-ntonintshi-3b2672221/" target="_blank"><i class="bi bi-linkedin"></i></a><p id="linked"> LinkedIn profile </p>
+       <a href="https://github.com/yakuphantonintshi" target="_blank"><i class="bi bi-github"></i></a>
+       <a href="https://www.linkedin.com/in/yakupha-ntonintshi-3b2672221/" target="_blank"><i class="bi bi-linkedin"></i></a>
        <p id="address"><i class="bi bi-geo-alt"></i><br> Khayelitsha 7784 Cape Town Western Cape</p>
      </div>
    </div>
@@ -156,9 +158,11 @@ export default {
   button{
     background-image: linear-gradient(to right, #51c4df, #002231, #51c4df);
     color: #51c4df;
-    width: 25%;
+    width: 250px;
+    height: 3.8rem;
     font-size: 1.5rem;
     transition: width 2s;
+    margin-top: 2rem;
   }
   button:hover{
     color: white;
@@ -192,15 +196,16 @@ h2{
   padding-right: 3rem;
   font-size: 1.7rem;
   padding-left: 3.5rem;
- border: 1px solid #51c4df;
- border-radius: 3rem;
- background-image: url('https://i.pinimg.com/originals/62/5e/95/625e95640cd2dc2f39b4862fd07826b2.gif');
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
+  border-bottom: 1px solid #51c4df;
+  border-right: 1px solid #51c4df;
+  box-shadow: 4px 4px 6px #51c4df;
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
 }
 p{
   color: #51c4df;
 }
+
 .row{
   padding-top: 4rem;
 }
@@ -230,6 +235,17 @@ p{
     font-size: 15px;
   }
 }
+@media screen and (max-width: 400px) {
+  .container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  input{
+    width: 250px;
+  }
+  
+}
 form{
   margin-right: 100px;
 }
@@ -244,6 +260,11 @@ form{
 }
 #address:hover{
   color: white;
+}
+@media screen and (max-width: 353px) {
+  #contact{
+    width: 200px;
+  }
 }
 
 
