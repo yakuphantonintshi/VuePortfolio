@@ -2,7 +2,7 @@
   <div class="container">
     <div class="row">
            <h1 class="education">Education</h1>
-            <div class="row gap-2 justify-content-center" v-if="education?.length">
+            <div class="row gap-1 justify-content-center" v-if="education?.length">
             <Card v-for="product in education" :key="product.id" id="card">
                 <template #cardHeader>
                     <img :src="product.imageURL" :alt="product.degree" loading="lazy" class="img-fluid">
@@ -10,9 +10,9 @@
                 <template #cardBody>
                     <h5 class="card-title">{{ product.school }}
                     </h5>
-                    <p class="shadow">{{ product.degree }}</p>
-                    <p class="lead"> {{ product.graduation_year }}</p>
-                    <p> <i class="bi bi-geo-alt"></i>: {{ product.location }}</p>
+                    <p class="shadow"  id="lead">{{ product.degree }}</p>
+                    <p> {{ product.graduation_year }}</p>
+                    <!-- <p> <i class="bi bi-geo-alt"></i>: {{ product.location }}</p> -->
                     <a :href="product.certificate" class="btn btn-dark" target="_blank"><i class="bi bi-download"></i> Certificate</a>
                 </template>
             </Card>
@@ -44,7 +44,16 @@ export default {
 </script>
 
 <style scoped>
-:is(h5, p,a){
+.card-title{
+    height: 50px;
+}
+p{
+    margin-block: 1.5rem;
+}
+#lead{
+    text-decoration: underline;
+}
+:is(h5, p){
     color: white;
 }
 .education{
@@ -56,37 +65,37 @@ export default {
 }
 .container{
     background-color:#002231;
-    margin-top: 3rem;
+    margin-top: 5.5rem;
 }
 a{
-    /* background-image: linear-gradient(to right, black, red, black); */
     background-image: linear-gradient(to right, #002231, #51C4DF);
     color: white;
-    width: 50%;
-    font-size: 1.5rem;
+    font-size: 1rem;
     transition: width 2s;
+    margin-top: 1.2rem;
 }
-button:hover{
+/* button:hover{
     color: white;
     width: 300px;
-}
+} */
+
 img{
     padding-top: 1rem;
-    width: 300px;
-    height: 300px;
+    width: 200px;
+    height: 200px;
 }
 .shadow{
     text-shadow: 4px 4px 6px #51C4DF;
-    font-size: 2rem;
+    font-size: 1.3rem;
     text-decoration: underline;
-    /* padding-bottom: 2rem; */
 }
 #card{
-    border: 2px solid #51C4DF;
     background-color: transparent;
-   border-radius: 15px;
-   margin-inline: 80px;
-   width: 400px;
+   margin-inline: 50px;
+   width: 300px;
+}
+#card:hover{
+    border: .8px solid #51C4DF;
 }
 @media screen and (max-width: 600px) {
   #app{

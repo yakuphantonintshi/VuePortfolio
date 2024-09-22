@@ -19,8 +19,8 @@
 
 #navBar{
     color: #51C4DF;
-    font-size: 22px;
-    padding-inline: 3rem;
+    font-size: 18px;
+    padding-inline: 1rem;
 }
 #navbarSupportedContent ul li a:hover{
     color: #51C4DF;
@@ -38,15 +38,15 @@ img{
 /* logo */
 
 img[alt='logo']{
-    width: 7rem;
+    width: 4rem;
 }
 
 :is(.wrapper){
   display: grid;
 }
-section{
+/* section{
   scroll-margin-block: 6rem;
-}
+} */
 
 @media screen and (max-width: 630px) {
   #app{

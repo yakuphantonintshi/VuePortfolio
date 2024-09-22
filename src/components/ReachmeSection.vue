@@ -118,6 +118,11 @@ export default {
 
 
 <style scoped>
+#contact{
+  width: 380px;
+  height: 400px;
+  margin-bottom: 3rem
+}
  
   .error {
   color: #51c4df;
@@ -145,8 +150,8 @@ export default {
 
   }
   input{
-    width: 400px;
-    height: 70px;
+    width: 300px;
+    height: 50px;
     display: grid;
     gap: 3rem;
     background-color: transparent;
@@ -169,7 +174,7 @@ export default {
     width: 150px;
 }
 .message{
-  width: 850px;
+  width: 630px;
   height: 11rem;
 }
 .container{
@@ -204,6 +209,7 @@ h2{
 }
 p{
   color: #51c4df;
+  font-size: 1.2rem;
 }
 
 .row{

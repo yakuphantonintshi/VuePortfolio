@@ -11,7 +11,7 @@
                   <template #cardBody>
                       <h5 class="card-title">{{ product.description }}</h5>
                       <a :href="product.github" class="btn btn-dark" target="_blank"><i class="bi bi-github"></i></a>
-                      <a :href="product.vercel" class="btn btn-dark" target="_blank">Vercel Link</a>
+                      <a :href="product.vercel" class="btn btn-dark" target="_blank">Vercel</a>
                      
                   </template>
               </Card>
@@ -45,17 +45,20 @@
   </script>
 
   <style scoped>
+  h2{
+    height: 80px;
+  }
   .card{
-    width: 450px;
-    height: 680px;
+    width: 300px;
+    height: 500px;
   }
   .container-fluid{
     background-color: #002231;
     margin-top: 3rem;
   }
   img{
-    width: 350px;
-    height: 350px;
+    width: 150px;
+    height: 150px;
      object-fit: contain;
     object-position: center;
   }
@@ -72,21 +75,25 @@
     grid-template-rows: repeat (3, 1fr );
 }
 a{
-    background-image: linear-gradient(to right, #002231, #51c4df);
+    /* background-image: linear-gradient(to right, #002231, #51c4df); */
+    background-color: transparent;
     color: #51c4df;
-    width: 150px;
-    font-size: 1.5rem;
+    width: 90px;
+    font-size: 1rem;
     transition: width 2s;
-    margin-inline: 20px;
+    margin-block: 7px;
+    margin-inline: .8rem;
 }
 a:hover{
     color: white;
-    width: 150px;
+    /* width: 150px; */
+    border: 1px solid #51c4df;
+    background-color: #51c4df;
 }
 #card{
     margin: 50px;
     background-color: transparent;
-    border: 2px solid #51c4df
+    border: 1px solid #51c4df
 }
 h2{
     
@@ -99,15 +106,17 @@ h2{
 }
 .card-title{
     color: white;
-    font-size: 1.2rem;
+    font-size: .9rem;
+    margin-bottom: 2rem;
+    height: 100px;
 }
 .card{
     display: grid;
     grid-template-rows: repeat (3, 1fr);
 }
 .btn{
-    margin-top: 30px;
-    border: 2px solid #51c4df;
+    margin-block: 5px;
+    border: .8px solid #51c4df;
 }
 @media screen and (max-width: 500px) {
 .btn{

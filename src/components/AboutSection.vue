@@ -3,7 +3,7 @@
         <h1 class="about">About Me</h1>
         <div class="aboutwrap">
             <div class="row align-items-center">
-                <div class="col-6" about>
+                <div class="col-5" about>
                     <div v-if="about?.length"> 
                   <p class="lead" v-for="(about, index) in about" :key="index">
                       {{ about }} 
@@ -14,10 +14,10 @@
                 </div>
               <Spinner v-else/>
                 </div>
-                <div class="col-6">
+                <div class="col-7">
       <div class="row">
-        <h1 class="skills">TECHNICAL SKILLS</h1>
-        <div class="row gap-2 justify-content-center" id="skills" v-if="skills?.length">
+        <h2 class="skills">TECHNICAL SKILLS</h2>
+        <div class="row gap-1 justify-content-center" id="skills" v-if="skills?.length">
           <Card v-for="skill in skills" :key="skill.id" id="card">
             <template #cardHeader>
               <h5 class="card-title">{{ skill.title }} </h5>
@@ -26,7 +26,7 @@
               <img :src="skill.image" :alt="skill.title" loading="lazy" class="img-fluid">
             </template>
           </Card> <br>
-          <h2>SOFT SKILLS</h2> <br>
+          <h4>SOFT SKILLS</h4> <br>
           <ul>
             <li>
               Communication
@@ -101,16 +101,16 @@ li{
   margin-left: 2rem;
 }
 .card{
-    width: 180px;
-    height: 250px;
+    width: 150px;
+    height: 150px;
     background-color: transparent;
     border: 2px solid #51C4DF;
-    margin-block: 2.5rem;
+    margin-block: 1.3rem;
 }
 .card-title{
     color: white;
 }
-:is(h1, h2){
+:is(h1, h2, h4){
     color: white;
     text-shadow: 2px 2px 5px #51C4DF;
 }
@@ -122,23 +122,25 @@ li{
   justify-items: center;
   margin-left: 3rem;
   height: 600px;
+  width: 800px;
   overflow-y: scroll;
-  padding: 10px;
+  /* padding: 10px; */
   background-color: transparent;
   border: 2px solid #51C4DF;
 }
 .img-fluid{
-    height: 150px;
+    height: 70px;
 }
 
 p{
     color: white;
-    font-size: 1.5rem;
+    font-size: 1.1rem;
+    padding-top: 3rem;
 }
 
 .container{
     background-color: #002231;
-    margin-top: 3rem;
+    margin-top: 6rem;
 }
 
 .aboutwrap{
@@ -147,8 +149,8 @@ p{
 }
 
 img{
-    width: 32rem;
-    height: 38rem;
+    /* width: 32rem;
+    height: 38rem; */
     /* border-radius: 1rem; */
     object-fit: fill;
     /* border: 8px solid #51c4df; */
@@ -236,7 +238,7 @@ span{
 .about{
     color: white;
     text-shadow: 4px 4px 6px #51C4DF;
-    font-size: 3.5rem;
+    font-size: 3rem;
     text-decoration: underline;
     padding-bottom: 2rem;
 }

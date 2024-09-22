@@ -43,8 +43,8 @@ onMounted(() => {
 
 <style scoped>
 .img-fluid{
-    width: 550px;
-  height: 550px;
+    width: 370px;
+  height: 370px;
   object-fit: cover;
   border: 4px solid #51c4df;
   animation: shapeChange 5s infinite ease-in-out;
@@ -78,7 +78,7 @@ span {
 }
 
 img {
-    width: 550px;
+    width: 5000px;
     object-fit: fill;
     border: 2px solid #51C4DF;
     box-shadow: 5px 5px 10px #51C4DF;
@@ -86,7 +86,7 @@ img {
 }
 
 .span {
-    font-size: 3rem;
+    font-size: 2rem;
 }
 
 p {
@@ -97,7 +97,7 @@ p {
 #myname {
     color: white;
     text-shadow: 3px 3px 5px #51C4DF;
-    font-size: 6rem;
+    font-size: 3.7rem;
     padding-bottom: 2rem;
 }
 
@@ -107,7 +107,7 @@ p {
 }
 
 .col {
-    padding-block-start: 7rem;
+    padding-block-start: 3rem;
 }
 .container-fluid{
     background-image: url('');
