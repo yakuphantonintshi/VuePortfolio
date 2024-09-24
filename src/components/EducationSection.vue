@@ -74,10 +74,6 @@ a{
     transition: width 2s;
     margin-top: 1.2rem;
 }
-/* button:hover{
-    color: white;
-    width: 300px;
-} */
 
 img{
     padding-top: 1rem;
@@ -105,12 +101,13 @@ img{
 @media screen and (max-width: 400px) {
   #card{
     width: 300px;
+    margin-left: 80px;
    }
    .btn{
     width: 200px;
    }
    .img-fluid{
-    width: 200px;
+    width: 700px;
     height: 300px;
    }
 }

@@ -270,6 +270,7 @@ form{
 @media screen and (max-width: 353px) {
   #contact{
     width: 200px;
+    margin-right: 80px;
   }
 }
 

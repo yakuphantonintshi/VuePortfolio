@@ -113,102 +113,117 @@ p {
     background-image: url('');
 }
 
-@media screen and (max-width: 950px) {
-    #myname {
-        font-size: 4.5rem;
-    }
+@media (max-width: 980px) {
+  .img-fluid {
+    width: 300px;
+    height: 300px;
+  }
+  
+  #myname {
+    font-size: 3rem;
+  }
 
-    p {
-        font-size: 2.5rem;
-    }
+  p {
+    font-size: 2.5rem;
+  }
 
-    .span {
-        font-size: 2.5rem;
-    }
-
-    img {
-        width: 400px;
-    }
-
-    .col {
-        padding-block-start: 5rem;
-    }
+  .span {
+    font-size: 1.8rem;
+  }
 }
 
-@media screen and (max-width: 750px) {
-    .row {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
+@media (max-width: 768px) {
+  .row {
+    flex-direction: column;
+    text-align: center;
+  }
 
-    #myname {
-        font-size: 3.5rem;
-        text-align: center;
-    }
+  .img-fluid {
+    width: 250px;
+    height: 250px;
+  }
 
-    p {
-        font-size: 2rem;
-        text-align: center;
-    }
+  #myname {
+    font-size: 2.5rem;
+  }
 
-    .span {
-        font-size: 2rem;
-    }
+  p {
+    font-size: 2rem;
+  }
 
-    img {
-        width: 300px;
-    }
-
-    .col {
-        padding-block-start: 3rem;
-    }
+  .span {
+    font-size: 1.5rem;
+  }
 }
-@media screen and (max-width: 500px) {
-    #myname {
-        font-size: 3rem;
-    }
+@media (max-width: 770px) {
+  .img-fluid {
+    width: 300px;
+    height: 300px;
+  }
 
-    p {
-        font-size: 1.8rem;
-    }
+  #myname {
+    font-size: 2rem;
+  }
 
-    .span {
-        font-size: 1.8rem;
-    }
+  p {
+    font-size: 1.8rem;
+  }
 
-    img {
-        width: 200px;
-    }
+  .span {
+    font-size: 1.2rem;
+  }
 
-    .col {
-        padding-block-start: 2rem;
-    }
-    .img-fluid{
-        margin-top: 3rem;
-    }
+  .col {
+    padding-block-start: .5rem;
+  }
 }
-@media screen and (max-width: 300px) {
-    #myname {
-        font-size: 2.5rem;
-    }
 
-    p {
-        font-size: 1.5rem;
-    }
+@media (max-width: 480px) {
+  .img-fluid {
+    width: 300px;
+    height: 300px;
+  }
 
-    .span {
-        font-size: 1.5rem;
-    }
+  #myname {
+    font-size: 2rem;
+  }
 
-    img {
-        width: 200px;
-    }
+  p {
+    font-size: 1.8rem;
+  }
 
-    .col {
-        padding-block-start: 1rem;
-    }
+  .span {
+    font-size: 1.2rem;
+  }
+
+  .col {
+    padding-block-start: .5rem;
+  }
 }
+
+@media (max-width: 299px) {
+  .img-fluid {
+    width: 150px;
+    height: 150px;
+  }
+
+  #myname {
+    font-size: 1.5rem;
+  }
+
+  p {
+    font-size: 1.2rem;
+  }
+
+  .span {
+    font-size: 1rem;
+  }
+
+  .col {
+    padding-block-start: 0.5rem;
+  }
+}
+
 
 
 </style>

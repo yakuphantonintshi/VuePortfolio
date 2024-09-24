@@ -122,20 +122,23 @@ h2{
 .btn{
 width: 150px;
 height: 30px;
+margin-block: .3rem;
 }
 .img-fluid{
-    width: 200px;
-    /* margin-bottom: 50px; */
-    margin-top: -70px;
+    width: 300px;
+    margin-top: .7rem;
 }
 .card-title{
-    margin-top: -60px;
+    margin-top: 1rem;
     font-size:smaller;
 
 }
 a{
     font-size: 1.2rem;
-    padding-block: 2rem;
+}
+#card{
+    margin-left: 80px;
+    height: auto;
 }
 }
 
