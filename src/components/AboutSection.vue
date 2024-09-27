@@ -207,7 +207,11 @@ span{
   }
 
   .img-fluid {
-    height: 60px;
+    height: 50px;
+    /* margin-bottom: 2rem; */
+  }
+  #card{
+    width: 10rem;
   }
 
   p {
@@ -246,6 +250,10 @@ span{
 
   .img-fluid {
     height: 50px;
+  }
+  #card{
+    width: 10rem;
+    height: 10rem;
   }
 
   p {
@@ -317,6 +325,9 @@ span{
 
   p {
     font-size: 0.7rem;
+  }
+  #skills{
+    margin-left: 2rem;
   }
 }
 

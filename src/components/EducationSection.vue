@@ -109,6 +109,7 @@ img{
    .img-fluid{
     width: 700px;
     height: 300px;
+    object-fit: contain;
    }
 }
 
