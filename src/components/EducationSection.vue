@@ -22,12 +22,12 @@
             </div>
         </div>
     </div>
-        <!-- <h1 class="education">Experience</h1>
+        <h1 class="education">Experience</h1>
        <h4>Volunteering Experiene:</h4>
        <p class="experience">Peer Supporter in High School where I was giving my peers emotional and mental support, try to get them to open up as it is hard to talk to an adult, with the guidance of a professional practitioner.</p>
        <h4 class="technical">Technical Experience:</h4>
-       <p>Intern at Life Choices Studio</p> -->
-       <div>
+       <p>Intern at Life Choices Studio</p>
+       <!-- <div>
         <h1 class="education">Experience</h1>
         <table>
             <tr>
@@ -39,7 +39,7 @@
                 <td>Intern at Life Choices Studio</td>
             </tr>
         </table>
-       </div>
+       </div> -->
   </div>
 </template>
 
@@ -155,5 +155,10 @@ img{
     object-fit: contain;
    }
 }
+/* @media screen and (max-width: 990px){
+    table{
+        margin-right: 30rem;
+    }
+} */
 
 </style>
