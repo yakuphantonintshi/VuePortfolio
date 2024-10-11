@@ -22,7 +22,24 @@
             </div>
         </div>
     </div>
-
+        <h1 class="education">Experience</h1>
+       <h4>Volunteering Experiene:</h4>
+       <p class="experience">Peer Supporter in High School where I was giving my peers emotional and mental support, try to get them to open up as it is hard to talk to an adult, with the guidance of a professional practitioner.</p>
+       <h4 class="technical">Technical Experience:</h4>
+       <p>Intern at Life Choices Studio</p>
+       <!-- <div>
+        <h1 class="education">Experience</h1>
+        <table>
+            <tr>
+                <th>Volunteering Experiene</th>
+                <th>Technical Experience</th>
+            </tr>
+            <tr>
+                <td class="experience">Peer Supporter in High School where I was giving my peers emotional and mental support, try to get them to open up as it is hard to talk to an adult, with the guidance of a professional practitioner.</td>
+                <td>Intern at Life Choices Studio</td>
+            </tr>
+        </table>
+       </div> -->
   </div>
 </template>
 
@@ -44,6 +61,28 @@ export default {
 </script>
 
 <style scoped>
+table{
+    border-collapse: collapse;
+}
+table th,
+table td {
+  border: 1px solid white;
+  padding: 15px; 
+  text-align: center;
+  color: white;
+}
+table th {
+  background-color: #328395;
+  width: 700px;
+}
+.technical{
+    margin-block-start: 2rem;
+}
+table{
+   margin-left: 15rem;
+   width: 800px;
+   margin-top: 3rem;
+}
 .card-title{
     height: 50px;
 }
@@ -53,8 +92,12 @@ p{
 #lead{
     text-decoration: underline;
 }
-:is(h5, p){
+:is(h5, h4, p){
     color: white;
+}
+h4{
+    text-decoration: underline;
+    color: #51C4DF
 }
 .education{
     color: white;
@@ -112,5 +155,10 @@ img{
     object-fit: contain;
    }
 }
+/* @media screen and (max-width: 990px){
+    table{
+        margin-right: 30rem;
+    }
+} */
 
 </style>

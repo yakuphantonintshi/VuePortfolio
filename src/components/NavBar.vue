@@ -16,7 +16,7 @@
           <a class="nav-link"  id="navBar" href="#about"><i class="bi bi-file-person"></i>About</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link"  id="navBar" href="#education"><i class="bi bi-book-fill"></i>Education</a>
+          <a class="nav-link"  id="navBar" href="#education"><i class="bi bi-book-fill"></i>Education and Experience</a>
         </li>
 
         <li class="nav-item">
