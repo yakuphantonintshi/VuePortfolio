@@ -39,7 +39,7 @@
        <i class="bi bi-check-circle"></i>
      </div>
  
-     <div class="col" id="contact">
+     <div class="col" id="contactt">
        <h2>Contact Info</h2>
        <p id="email"><i class="bi bi-envelope"></i><br> yakupha58756@gmail.com</p>
        <p id="phone"><i class="bi bi-telephone"></i><br> +27 62 507 0288</p>
@@ -146,7 +146,7 @@ export default {
     text-shadow: 4px 4px 6px #51c4df;
     font-size: 3.5rem;
     text-decoration: underline;
-    padding-top: 2rem;
+    padding-top: 4.8rem;
 
   }
   input{
@@ -194,7 +194,7 @@ h2{
     font-size: 2rem;
     padding-bottom: 2rem; 
 }
-#contact{
+#contactt{
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -232,7 +232,7 @@ p{
   .message{
     width: 70%;
   }
-  #contact{
+  #contactt{
      margin-top: 40px;
     width: 300px;
     height: 420px;
@@ -267,12 +267,28 @@ form{
 #address:hover{
   color: white;
 }
-@media screen and (max-width: 353px) {
+/* @media screen and (max-width: 353px) {
   #contact{
     width: 200px;
     margin-right: 80px;
   }
+} */
+@media screen and (max-width: 980px) {
+  .message{
+    width: 300px;
+  }
 }
+@media screen and (max-width: 400px) {
+  .message{
+    width: 250px;
+  }
+}
+@media screen and (max-width: 400px) {
+  #contactt{
+    margin-right: 110px;
+  }
+}
+
 
 
 </style>

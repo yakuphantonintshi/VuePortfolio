@@ -63,6 +63,7 @@
     object-position: center;
   }
   h1{
+    padding-top: 2rem;
     color: #51c4df;
 }
 .projects{
