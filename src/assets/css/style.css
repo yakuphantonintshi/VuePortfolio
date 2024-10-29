@@ -7,6 +7,7 @@
     text-align: center;
     background-color: #002231;
     overflow-x: hidden;
+    scroll-behavior: smooth;
   }
 
   .card-body{
@@ -33,6 +34,7 @@ img{
  object-fit: cover;
  object-position: center;
 }
+
 
 
 /* logo */

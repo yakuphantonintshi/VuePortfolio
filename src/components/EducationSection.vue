@@ -41,6 +41,54 @@
         </table>
        </div> -->
   </div>
+  <h1 class="education">My Certificates</h1>
+  <div class="certificates">
+    <div class="certificate">
+        <img src="https://yakuphantonintshi.github.io/myimages/Images/cert1.png" alt="">
+    </div>
+    <div class="certificate">
+        <img src="https://yakuphantonintshi.github.io/myimages/Images/cert2.png" alt="">
+    </div>
+    <div class="certificate">
+        <img src="https://yakuphantonintshi.github.io/myimages/Images/cert3.png" alt="">
+    </div>
+    <div class="certificate">
+        <img src="https://yakuphantonintshi.github.io/myimages/Images/cert4.png" alt="pic1">
+    </div>
+    <div class="certificate">
+        <img src="https://yakuphantonintshi.github.io/myimages/Images/cert5.png" alt="">
+    </div>
+    <div class="certificate">
+        <img src="https://yakuphantonintshi.github.io/myimages/Images/cert6.png" alt="">
+    </div>
+    <div class="certificate">
+        <img src="https://yakuphantonintshi.github.io/myimages/Images/cert7.png" alt="">
+    </div>
+    <div class="certificate">
+        <img src="https://yakuphantonintshi.github.io/myimages/Images/cert8.png" alt="">
+    </div>
+    <div class="certificate">
+        <img src="https://yakuphantonintshi.github.io/myimages/Images/cert9.png" alt="">
+    </div>
+    <div class="certificate">
+        <img src="https://yakuphantonintshi.github.io/myimages/Images/cert10.png" alt="">
+    </div>
+    <div class="certificate">
+        <img src="https://yakuphantonintshi.github.io/myimages/Images/cert11.png" alt="">
+    </div>
+    <div class="certificate">
+        <img src="https://yakuphantonintshi.github.io/myimages/Images/cert12.png" alt="">
+    </div>
+    <div class="certificate">
+        <img src="https://yakuphantonintshi.github.io/myimages/Images/cert13.png" alt="">
+    </div>
+    <div class="certificate">
+        <img src="https://yakuphantonintshi.github.io/myimages/Images/cert14.png" alt="">
+    </div>
+    <div class="certificate">
+        <img src="https://yakuphantonintshi.github.io/myimages/Images/cert15.png" alt="">
+    </div>
+  </div>
 </template>
 
 <script>
@@ -61,6 +109,32 @@ export default {
 </script>
 
 <style scoped>
+
+.certificates {
+  display: flex; 
+  animation: scroll 30s linear infinite;
+  gap: 3rem;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(100%); 
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+.certificate img {
+  width: 15rem;
+  height: 12rem; 
+}
+.certificate:hover {
+  transform: scale(1.4); 
+}
+.certificates:hover {
+  animation-play-state: paused;
+}
+
 table{
     border-collapse: collapse;
 }
