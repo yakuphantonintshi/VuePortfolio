@@ -41,7 +41,7 @@
         </table>
        </div> -->
   </div>
-  <h1 class="education">My Certificates</h1>
+  <h3 class="mycertificate">My Certificates</h3>
   <div class="certificates">
     <div class="certificate">
         <img src="https://yakuphantonintshi.github.io/myimages/Images/cert1.png" alt="">
@@ -172,6 +172,13 @@ p{
 h4{
     text-decoration: underline;
     color: #51C4DF
+}
+.mycertificate{
+    color: white;
+    text-shadow: 4px 4px 6px #51C4DF;
+    /* font-size: 3.5rem; */
+    text-decoration: underline;
+    padding-bottom: 2rem;
 }
 .education{
     color: white;
