@@ -10,7 +10,7 @@
                      <!-- <span> <br><br> => </span>Date of Birth: 19 December 2002 <br> <br>
                      <span> => </span>Age: 21 years old <br> <br> -->
                   </p>
-                  <a href="https://yakuphantonintshi.github.io/myimages/Images/YAKUPHA CV.pdf" class="btn btn-dark" target="_blank"><i class="bi bi-cloud-arrow-down-fill"></i> RESUME</a>
+                  <a href="https://yakuphantonintshi.github.io/myimages/Images/YakuphaCV.pdf" class="btn btn-dark" target="_blank"><i class="bi bi-cloud-arrow-down-fill"></i> RESUME</a>
                 </div>
               <Spinner v-else/>
                 </div>
