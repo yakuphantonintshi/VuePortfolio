@@ -17,46 +17,43 @@
                 <div class="col-7">
       <div class="row">
         <h2 class="skills">TECHNICAL SKILLS</h2>
-        <div class="row gap-1 justify-content-center" id="skills" v-if="skills?.length">
-          <Card v-for="skill in skills" :key="skill.id" id="card">
-            <template #cardHeader>
-              <h5 class="card-title">{{ skill.title }} </h5>
-            </template>
-            <template #cardBody>
-              <img :src="skill.image" :alt="skill.title" loading="lazy" class="img-fluid">
-            </template>
-          </Card> <br>
-          <h4>SOFT SKILLS</h4> <br>
-          <ul>
-            <li>
-              Communication
-            </li>
-            <li>
-              Team Work
-            </li>
-            <li>
-              Problem solving
-            </li>
-            <li>
-              Time management
-            </li>
-            <li>
-              Adaptability 
-            </li>
-            <li>
-              Leadership
-            </li>
-            <li>
-              Peer Support
-            </li>
-          </ul>
-        </div>
-        <div v-else class="d-flex justify-content-center">
-          <div class="spinner-border" role="status"></div>
-        </div>
+        <div class="row gap-1 justify-content-center" id="skills">
+  <!-- TECHNICAL SKILLS -->
+  <template v-if="skills?.length">
+    <Card v-for="skill in skills" :key="skill.id" id="card">
+      <template #cardHeader>
+        <h5 class="card-title">{{ skill.title }}</h5>
+      </template>
+      <template #cardBody>
+        <img :src="skill.image" :alt="skill.title" loading="lazy" class="img-fluid" id="tech">
+      </template>
+    </Card> 
+  </template>
+
+  <br>
+  <h4>SOFT SKILLS</h4> 
+  <br>
+
+  <!-- SOFT SKILLS -->
+  <template v-if="softskills?.length">
+    <Card v-for="softskill in softskills" :key="softskill.id" id="card">
+      <template #cardHeader>
+        <h5 class="card-title" id="soft">{{ softskill.skilltitle }}</h5>
+      </template>
+      <template #cardBody>
+        <img :src="softskill.image" :alt="softskill.title" loading="lazy" class="img-fluid">
+      </template>
+    </Card>
+  </template>
+  
+  <div v-else class="d-flex justify-content-center">
+    <div class="spinner-border" role="status"></div>
+  </div>
+</div>
+
+        
     
     </div>
-              <!-- <img src="https://yakuphantonintshi.github.io/myimages/Images/LifeChoicesPic.jpg" alt="my image" loading="lazy" class="img-fluid"> -->
                 </div>
                 
             </div>
@@ -71,13 +68,29 @@
   const store = useStore()
   const about = computed(() => store.state.about)
   const skills = computed(() => store.state.skills);
-  
+  const softskills = computed(() => store.state.softskills);
+
   onMounted(() => {
-      store.dispatch('fetchAbout')
-  })
+    store.dispatch('fetchAbout', 'fetchSoftskills')
+  store.dispatch("fetchSoftskills").then(() => {
+    console.log("Soft Skills Data:", store.state.softskills);
+  });
+});
   </script>
   
 <style scoped>
+.lead{
+  font-size: 1.35rem;
+}
+#tech{
+  filter: grayscale(100%);
+}
+#tech:hover{
+  filter: none;
+}
+#soft{
+  font-size: .8rem;
+}
 .btn{
   width: 300px;
   height: 3.4rem;
@@ -154,7 +167,7 @@ img{
     /* border-radius: 1rem; */
     object-fit: fill;
     /* border: 8px solid #51c4df; */
-    box-shadow: 4px 4px 10px 8px #51C4DF;
+    /* box-shadow: 4px 4px 10px 8px #51C4DF; */
 }
 
 span{

@@ -3,32 +3,32 @@
 
     <h1>Contact me</h1>
    <div class="container">
-     <form action="https://formspree.io/f/xanwgnnq"
+     <form action="https://formspree.io/f/xgvolzpl"
      method="POST" @submit.prevent="validateForm">
        <div class="row">
          <div class="col">
-           <input type="text" placeholder="Name" v-model="form.name" class="name" />
+           <input type="text" placeholder="Name" v-model="form.name" name="name" class="name" />
            <span v-if="errors.name" class="error">{{ errors.name }}</span>
          </div>
          <div class="col">
-           <input type="text" placeholder="Surname" v-model="form.surname" class="surname" />
+           <input type="text" placeholder="Surname" v-model="form.surname" name="surname" class="surname" />
            <span v-if="errors.surname" class="error">{{ errors.surname }}</span>
          </div>
        </div>
        
        <div class="row ">
          <div class="col">
-           <input type="text" placeholder="Phone number" v-model="form.number" class="number" />
+           <input type="text" placeholder="Phone number" v-model="form.number" name="number" class="number" />
            <span v-if="errors.number" class="error">{{ errors.number }}</span>
          </div>
          <div class="col">
-           <input type="text" placeholder="Email address" v-model="form.email" class="email" /> <br>
+           <input type="text" placeholder="Email address" v-model="form.email" name="email" class="email" /> <br>
            <span v-if="errors.email" class="error">{{ errors.email }}</span>
          </div>
        </div>
        
        <br />
-       <input type="text" v-model="form.message" class="message" placeholder="Message" />
+       <input type="text" v-model="form.message" name="message" class="message" placeholder="Message" />
        <span v-if="errors.message" class="error">{{ errors.message }}</span>
        
        <br />
@@ -43,8 +43,11 @@
        <h2>Contact Info</h2>
        <p id="email"><i class="bi bi-envelope"></i><br> yakupha58756@gmail.com</p>
        <p id="phone"><i class="bi bi-telephone"></i><br> +27 62 507 0288</p>
-       <a href="https://github.com/yakuphantonintshi" target="_blank"><i class="bi bi-github"></i></a>
-       <a href="https://www.linkedin.com/in/yakupha-ntonintshi-3b2672221/" target="_blank"><i class="bi bi-linkedin"></i></a>
+       <div class="links">
+
+         <a href="https://github.com/yakuphantonintshi" target="_blank"><i class="bi bi-github"></i></a>
+         <a href="https://www.linkedin.com/in/yakupha-ntonintshi-3b2672221/" target="_blank"><i class="bi bi-linkedin"></i></a>
+       </div>
        <p id="address"><i class="bi bi-geo-alt"></i><br> Khayelitsha 7784 Cape Town Western Cape</p>
      </div>
    </div>
@@ -118,6 +121,11 @@ export default {
 
 
 <style scoped>
+.links{
+  display: flex;
+  gap: 20px;
+  margin-bottom: 1rem;
+}
 #contact{
   width: 380px;
   height: 400px;

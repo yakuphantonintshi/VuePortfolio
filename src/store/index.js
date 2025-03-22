@@ -9,6 +9,7 @@ export default createStore({
     about: null,
     education: null,
     skills: null,
+    softskills: null,
     testimonial: null,
     projects: null
 
@@ -27,6 +28,9 @@ export default createStore({
     },
     setSkills(state, value){
       state.skills = value
+    },
+    setSoftskills(state, value){
+      state.softskills = value
     },
     setTestimonials(state, value){
       state.testimonials = value
@@ -79,6 +83,19 @@ export default createStore({
       try{
         let {skills} = await (await axios.get(portfolioURL)).data
         context.commit("setSkills", skills)
+      } catch(e){
+        Swal.fire({
+          title: "Error",
+          text: "Failed to fetch the skill data",
+          icon: "error",
+          timer: 2000
+        })
+      }
+    },
+    async fetchSoftskills(context){
+      try{
+        let {softskills} = await (await axios.get(portfolioURL)).data
+        context.commit("setSoftskills", softskills)
       } catch(e){
         Swal.fire({
           title: "Error",
